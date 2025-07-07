@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳梦之家-登录</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container with-bg">
+        <div class="login-box">
+            <h2>登录柳梦之家</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" required placeholder=" ">
+                    <label for="username">账号</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required placeholder=" ">
+                    <label for="password">密码</label>
+                </div>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+    <div id="error-modal" class="modal-overlay">
+        <div class="modal-box">
+            <p id="error-message"></p>
+            <button id="close-modal">好的</button>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

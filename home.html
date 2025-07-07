@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳梦之家-首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">柳梦之家</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link active">首页</a></li>
+                <li class="nav-item"><a href="memories.html" class="nav-link">记忆碎片</a></li>
+                <li class="nav-item"><a href="anniversary.html" class="nav-link">纪念日</a></li>
+                <li class="nav-item"><a href="purpose.html" class="nav-link">建站初衷</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-right">
+                <div id="clock"></div>
+                <div id="user-info"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>亲爱的柳儿，欢迎回家</h1>
+            <p class="subtitle">这里是我想对你说的话。</p>
+        </header>
+        <div class="content-box">
+            <p>这里是我们爱情的秘密花园，记录着我们从相识、相知到相爱的每一个珍贵瞬间。时光荏苒，岁月如梭，但我们的故事将永远在这里绽放。</p>
+            <p>世界这么大，还是遇见你；世界这么小，刚好是你。</p>
+        </div>
+    </div>
+
+    <div id="logout-confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>退出登录</h2>
+            <p>你确定要退出当前账号吗？</p>
+            <div class="modal-buttons">
+                <button id="confirm-logout-btn">确定</button>
+                <button id="cancel-logout-btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

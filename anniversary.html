@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳梦之家-我们的纪念日</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/anniversary.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">柳梦之家</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="memories.html" class="nav-link">记忆碎片</a></li>
+                <li class="nav-item"><a href="anniversary.html" class="nav-link active">纪念日</a></li>
+                <li class="nav-item"><a href="purpose.html" class="nav-link">建站初衷</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-right">
+                <div id="clock"></div>
+                <div id="user-info"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>纪念日</h1>
+            <p class="subtitle">记录我们每一个特别的日子</p>
+        </header>
+
+        <div class="time-format-switcher">
+            显示方式: 
+            <button data-format="days">天数</button>
+            <button data-format="months">月份</button>
+            <button data-format="years">年份</button>
+            <button data-format="full">详细时间</button>
+        </div>
+
+        <div class="anniversary-section">
+            <h2>爱情纪念日</h2>
+            <div class="anniversary-card main-counter">
+                <p>相爱至今已 <span id="love-counter"></span></p>
+            </div>
+            <div id="love-milestones" class="milestones-grid">
+                <!-- Milestones will be generated here -->
+            </div>
+        </div>
+
+        <div class="anniversary-section">
+            <h2>相识纪念日</h2>
+            <div class="anniversary-card main-counter">
+                <p>我们相识已 <span id="acquaintance-counter"></span></p>
+            </div>
+            <div id="acquaintance-milestones" class="milestones-grid">
+                <!-- Milestones will be generated here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="logout-confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>退出登录</h2>
+            <p>你确定要退出当前账号吗？</p>
+            <div class="modal-buttons">
+                <button id="confirm-logout-btn">确定</button>
+                <button id="cancel-logout-btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/anniversary.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

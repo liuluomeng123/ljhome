@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳梦之家-我们的记忆碎片</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/memories.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">柳梦之家</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="memories.html" class="nav-link active">记忆碎片</a></li>
+                <li class="nav-item"><a href="anniversary.html" class="nav-link">纪念日</a></li>
+                <li class="nav-item"><a href="purpose.html" class="nav-link">建站初衷</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-right">
+                <div id="clock"></div>
+                <div id="user-info"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>记忆碎片</h1>
+            <p class="subtitle">我们共同的美好时光</p>
+        </header>
+        <div id="memories-grid" class="memories-grid">
+            <!-- Memory cards will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal for detailed view -->
+    <div id="memory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img src="" alt="Memory Image" id="modal-img">
+                    <div class="image-controls">
+                        <button id="prev-img">&lt;</button>
+                        <span id="img-counter"></span>
+                        <button id="next-img">&gt;</button>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-header-section">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-date"></p>
+                    </div>
+                    <hr>
+                    <div class="modal-description-section">
+                        <p id="modal-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image viewer -->
+    <div id="image-viewer" class="image-viewer">
+        <span class="close-viewer-button">&times;</span>
+        <div class="viewer-controls">
+            <button id="zoom-out">-</button>
+            <span id="zoom-level">100%</span>
+            <div id="zoom-menu" class="zoom-menu">
+                <div data-zoom="0.5">50%</div>
+                <div data-zoom="1">100%</div>
+                <div data-zoom="1.5">150%</div>
+                <div data-zoom="2">200%</div>
+            </div>
+            <button id="zoom-in">+</button>
+            <button id="reset-zoom">重置</button>
+        </div>
+        <img src="" alt="Full-size Image" id="viewer-img">
+    </div>
+
+    <div id="logout-confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>退出登录</h2>
+            <p>你确定要退出当前账号吗？</p>
+            <div class="modal-buttons">
+                <button id="confirm-logout-btn">确定</button>
+                <button id="cancel-logout-btn">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/memories-data.js"></script>
+    <script src="js/memories.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
